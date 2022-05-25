@@ -1,0 +1,19 @@
+<import from="./welcome-page"></import>
+<import from="./about-page"></import>
+<import from="./show-param"></import>
+
+<nav>
+    <a load="/welcome">Welcome</a>
+    <a load="/about">About</a>
+    <a load="/show/1">Show Param 1</a>
+    <a load="/show/2">Show Param 2</a>
+    <!-- <a load="show-param(id=2)">Show Param 2 Direct Routing</a> -->
+
+
+    <button click.trigger="loadComponent('welcome')">Welcome</button>
+    <button click.trigger="loadComponent('about')">About</button>
+    <button click.trigger="loadComponent('show', 1)">Show Param 1</button>
+    <button click.trigger="loadComponent('show', 2)">Show Param 2</button>
+</nav>
+
+<au-viewport default="welcome-page"></au-viewport>
